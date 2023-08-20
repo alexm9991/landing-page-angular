@@ -1,0 +1,56 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+// colors
+$primary: $blue-500;
+$blue-20: $blue-100;
+$success: $green;
+$info: $cyan;
+$warning: $yellow;
+$danger: $red;
+$light: $gray-100;
+$dark: $gray-900;
+$teal: $teal-500;
+$teal-20: $teal-100;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark,
+  "teal": $teal,
+  "teal-20": $teal-20,
+  "blue-20": $blue-20,
+);
+
+// border
+$border-radius: 0.25rem;
+
+// font
+$h1-font-size: $font-size-base * 4;
+$h2-font-size: $font-size-base * 2.8;
+$h3-font-size: $font-size-base * 2.5;
+$h4-font-size: $font-size-base * 2;
+$h5-font-size: $font-size-base * 1.5;
+$h6-font-size: $font-size-base * 1.2;
+
+$body-color: #8f9bad;
+$line-height-base: 1.8;
+
+span,
+p {
+  font-size: $font-size-base * 1.25;
+}
+
+// utilities
+$px-10: ($spacer * 6) !important;
+
+.px-10 {
+  padding-inline: $px-10;
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
