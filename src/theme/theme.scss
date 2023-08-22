@@ -1,5 +1,6 @@
-@import "../node_modules/bootstrap/scss/functions";
-@import "../node_modules/bootstrap/scss/variables";
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
 
 // colors
 $primary: $blue-500;
@@ -27,9 +28,6 @@ $theme-colors: (
   "blue-20": $blue-20,
 );
 
-// border
-$border-radius: 0.25rem;
-
 // font
 $h1-font-size: $font-size-base * 4;
 $h2-font-size: $font-size-base * 2.8;
@@ -46,11 +44,29 @@ p {
   font-size: $font-size-base * 1.25;
 }
 
+// border
+$border-radius: 0.25rem;
+
 // utilities
-$px-10: ($spacer * 6) !important;
+$px-10: ($spacer * 6);
 
 .px-10 {
   padding-inline: $px-10;
 }
 
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@include media-breakpoint-down(md) {
+  .px-10 {
+    padding-inline: 1rem;
+  }
+
+  .position-end {
+    top: 1rem;
+    right: 0!important;
+  }
+
+  .d-flex.justify-content-between {
+    flex-direction: column;
+  }
+}
+
+@import "bootstrap/scss/bootstrap.scss";
