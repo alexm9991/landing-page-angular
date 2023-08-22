@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { ICommentUser } from '../../../../interfaces/comment-user.object';
 
 @Component({
   selector: 'app-us',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./us.component.scss']
 })
 export class UsComponent {
-
+  @Input() commentsUsers!: ICommentUser[]
 }

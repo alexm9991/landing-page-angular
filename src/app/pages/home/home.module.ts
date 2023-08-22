@@ -9,6 +9,12 @@ import { PlansComponent } from './components/plans/plans.component';
 import { UsComponent } from './components/us/us.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NavbarComponent } from './components/header/navbar.component';
+import { ServiceComponent } from './components/services/service.component';
+import { WaveComponent } from './components/plans/components/wave.component';
+import { PlanComponent } from './components/plans/components/plan.component';
+import { CommentUserComponent } from './components/us/components/comment-user.component';
+import { SliderComponent } from './components/us/components/slider.component';
+import { SlidesPipe } from './pipes/slides.pipe';
 
 
 
@@ -19,9 +25,15 @@ import { NavbarComponent } from './components/header/navbar.component';
     NavbarComponent,
     BannerComponent,
     ServicesComponent,
+    ServiceComponent,
     PlansComponent,
+    WaveComponent,
+    PlanComponent,
     UsComponent,
-    FooterComponent
+    CommentUserComponent,
+    SliderComponent,
+    FooterComponent,
+    SlidesPipe
   ],
   imports: [
     CommonModule,
