@@ -1,6 +1,9 @@
 # LandingPage
 
-## Enhancements - UX:	
+## Link - GithubPages :rocket:
+https://alexm9991.github.io/landing-page-angular/home
+
+## Enhancements - UX:	:lipstick:
 
 Dentro de las mejoras del prototipo de UI/UX considero que se debe definir lo siguiente:
 
@@ -13,11 +16,11 @@ Dentro de las mejoras del prototipo de UI/UX considero que se debe definir lo si
 7. Definir el enfoque al que va referenciado esta landing page, pues no se puede determinar a simple vista si está dirigido a un nicho tecnológico, a uno educativo ó a uno de comunicación, etc.
 8. Agregar un medio de contacto
 
-## Enhancements - Code:
+## Enhancements - Code: :computer: :coffee:
 
 1. Implementar pruebas unitarias
 
-## Screenshot - Desktop :computer:	
+## Screenshot - Desktop :desktop_computer:
 
 ![1692679124099](image/README/1692679124099.png)
 
