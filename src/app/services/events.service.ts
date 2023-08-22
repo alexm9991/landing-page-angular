@@ -59,7 +59,7 @@ export class EventsService {
   };
 
   private _localPostsUsers() {
-    const LOCAL = '../../assets'
+    const LOCAL = 'assets'
     const URI = `${LOCAL}/data/posts-users.json`
 
     return this.http.get<ILocalJsonPostUser>(URI)
