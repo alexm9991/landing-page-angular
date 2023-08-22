@@ -1,0 +1,19 @@
+{
+  "data": [
+    {
+      "name": "Elberth Agreda",
+      "avatar": "assets/img/img3.jpg",
+      "coverImage": "assets/img/foto1.PNG"
+    },
+    {
+      "name": "Milena paez",
+      "avatar": "assets/img/img2.jpg",
+      "coverImage": ""
+    },
+    {
+      "name": "Lucia carvajal",
+      "avatar": "assets/img/img1.jpg",
+      "coverImage": "assets/img/foto2.PNG"
+    }
+  ]
+}
