@@ -1,27 +1,25 @@
 # LandingPage
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0.
+## Enhancements - UX:	
 
-## Development server
+Dentro de las mejoras del prototipo de UI/UX considero que se debe definir lo siguiente:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+1. Paleta de colores 
+2. Márgenes o Paddings 
+3. Tamaño de los elementos
+4. Diseño mobile responsive
+5. Diseño dark mode
+6. Contenido con información real.
+7. Definir el enfoque al que va referenciado esta landing page, pues no se puede determinar a simple vista si está dirigido a un nicho tecnológico, a uno educativo ó a uno de comunicación, etc.
+8. Agregar un medio de contacto
 
-## Code scaffolding
+## Enhancements - Code:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. Implementar pruebas unitarias
 
-## Build
+## Screenshot - Desktop :computer:	
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+![1692679124099](image/README/1692679124099.png)
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Screenshot - Mobile :iphone:	
+![1692679250342](image/README/1692679250342.png)
