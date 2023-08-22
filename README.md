@@ -1,7 +1,7 @@
 # LandingPage
 
 ## Link - GithubPages :rocket:
-https://alexm9991.github.io/landing-page-angular/home
+https://alexm9991.github.io/landing-page-angular
 
 ## Enhancements - UX:	:lipstick:
 
