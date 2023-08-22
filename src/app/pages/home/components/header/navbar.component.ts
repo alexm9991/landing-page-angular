@@ -12,7 +12,7 @@ import { Component } from '@angular/core';
           alt="logo"
         />
       </a>
-      <form class="d-flex flex-row align-items-center flex-wrap">
+      <form class="d-flex flex-row align-items-center  justify-content-between flex-wrap">
         <div class="dropdown ml-2" *ngFor="let i of [1, 2, 3, 4, 5]">
           <button
             class="btn dropdown-toggle"
