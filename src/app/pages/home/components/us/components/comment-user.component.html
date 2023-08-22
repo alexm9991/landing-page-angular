@@ -1,0 +1,35 @@
+<article class="card bg-white shadow border-0 d-inline-block">
+  <img
+    *ngIf="commentUser.coverImage"
+    class="card-img"
+    [src]="commentUser.coverImage"
+    alt="image user comment"
+  />
+  <div class="card-img-overlay">
+    <div class="card-body pt-5">
+      <h5
+        [ngClass]="commentUser.coverImage ? 'text-white fw-bold' : 'text-black'"
+        class="card-title mt-5 pt-5"
+      >
+        {{ commentUser.comment }}
+      </h5>
+      <p
+        [ngClass]="commentUser.coverImage ? 'text-light' : 'text-black'"
+        class="card-text fw-bold mt-4 mb-2"
+      >
+        {{ commentUser.user }}
+      </p>
+      <img
+        [src]="commentUser.avatar"
+        class="rounded-circle"
+        width="40"
+        alt="client"
+      />
+      <div *ngIf="!commentUser.coverImage" class="my-4">
+        <button class="btn btn-blue-20">
+          <span class="text-primary">Read More</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</article>

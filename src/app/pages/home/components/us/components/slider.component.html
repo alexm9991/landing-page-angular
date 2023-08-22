@@ -1,0 +1,68 @@
+<div id="indicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div
+      class="carousel-item active"
+      *ngFor="let groupCommentsUsers of commentsUsers | Slides"
+    >
+      <div class="d-flex justify-content-evenly align-items-center py-5">
+        <app-comment-user
+          *ngFor="let comment of groupCommentsUsers"
+          [commentUser]="comment"
+        ></app-comment-user>
+      </div>
+    </div>
+
+    <div
+      class="carousel-item"
+      *ngFor="let groupCommentsUsers of commentsUsers | Slides"
+    >
+      <div class="d-flex justify-content-evenly align-items-center py-5">
+        <app-comment-user
+          *ngFor="let comment of groupCommentsUsers"
+          [commentUser]="comment"
+        ></app-comment-user>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel-indicators">
+    <button
+      *ngFor="let i of [0, 1, 2]"
+      [ngClass]="i == 0 ? 'active' : 'bg-white'"
+      class="border border-primary"
+      [attr.aria-current]="i == 0"
+      type="button"
+      data-bs-target="#indicators"
+      [attr.data-bs-slide-to]="i"
+      [attr.aria-label]="'Slide ' + i"
+    ></button>
+  </div>
+
+  <div class="prev start-0">
+    <button
+      class="btn btn-blue-20 rounded-circle"
+      type="button"
+      data-bs-target="#indicators"
+      data-bs-slide="prev"
+    >
+      <span class="material-icons px-1 py-2 text-primary" aria-hidden="true"
+        >arrow_back</span
+      >
+      <span class="visually-hidden">Previous</span>
+    </button>
+  </div>
+
+  <div class="next end-0">
+    <button
+      class="btn btn-blue-20 rounded-circle"
+      type="button"
+      data-bs-target="#indicators"
+      data-bs-slide="next"
+    >
+      <span class="material-icons px-1 py-2 text-primary" aria-hidden="true"
+        >arrow_forward</span
+      >
+      <span class="visually-hidden">Previous</span>
+    </button>
+  </div>
+</div>
