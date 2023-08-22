@@ -1,1 +1,69 @@
-<p>plans works!</p>
+<section class="d-flex justify-content-between align-items-center py-5">
+  <ng-container *ngTemplateOutlet="DescribeSubscriptions"></ng-container>
+
+  <section class="col-12 col-md-7 col-sm-12">
+    <div class="row p-md-4 m-2 justify-content-center">
+      <article class="col-12 col-md-6 py-5">
+        <app-plan
+          title="Plan 1"
+          value="22"
+          option="Opcion 1"
+          [list]="[1, 2, 3, 4]"
+        ></app-plan>
+      </article>
+
+      <article class="col-12 col-md-6">
+        <app-plan
+          title="Plan 2"
+          value="99"
+          option="Opcion 2"
+          [list]="[1, 2, 3, 4, 5]"
+        ></app-plan>
+      </article>
+
+      <ng-container *ngTemplateOutlet="TermsConditions"></ng-container>
+    </div>
+  </section>
+</section>
+
+<ng-template #DescribeSubscriptions>
+  <div class="col-12 col-md-3">
+    <span class="bg-teal-20 rounded-pill text-teal px-4 py-2"> Texto </span>
+    <h4 class="text-black mt-4">Contenido extra</h4>
+    <h4 class="text-black">
+      Lorem, ipsum dolor sit amet, consectetur adipisicing elit
+    </h4>
+    <p class="mb-5">
+      Lorem, ipsum dolor sit amet, consectetur adipisicing elit
+    </p>
+
+    <a href="#" class="position-relative d-block">
+      <span class="badge-right bg-teal rounded-pill text-white"> 10% OFF </span>
+      <div class="btn-group btn-group-toggle pt-1" data-toggle="buttons">
+        <label class="btn btn-primary btn-lg">
+          <span class="mx-4">Mes</span>
+        </label>
+        <label class="btn btn-light btn-lg border">
+          <span class="mx-4 text-muted">Año</span>
+        </label>
+      </div>
+    </a>
+  </div>
+</ng-template>
+
+<ng-template #TermsConditions>
+  <div class="row justify-content-center w-100 my-3">
+    <ul class="list-inline">
+      <li class="list-inline-item">
+        <p>
+          <abbr title="HyperText Markup Language" class="text-description"
+            >*Terminos
+          </abbr>
+        </p>
+      </li>
+      <li class="list-inline-item">
+        <span class="text-description"> y Condiciones</span>
+      </li>
+    </ul>
+  </div>
+</ng-template>
